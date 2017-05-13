@@ -2,21 +2,23 @@ Creating desktop app using Angular 2 and Electron framework
 
  1. A basic Electron application needs just these files:
 
-•package.json - Points to the app's main file and lists its details and dependencies.
-•main.js - Starts the app and creates a browser window to render HTML. This is the app's main process.
-•index.html - A web page to render. This is the app's renderer process.
+      package.json - Points to the app's main file and lists its details and dependencies.
+      
+      main.js - Starts the app and creates a browser window to render HTML. This is the app's main process.
+      
+      index.html - A web page to render. This is the app's renderer process.
 
-2. Steps:
+ 2. Steps:
 
- npm init
+    npm init
  
- npm install electron-prebuilt --save-dev
+    npm install electron-prebuilt --save-dev
 
- create index.js and app/index.html
+    create index.js and app/index.html
 
- modify package.json to add start scripts
+    modify package.json to add start scripts
 
- add a webpack.congif.js file 
+    add a webpack.congif.js file 
  
  Every webpack config file will have 4 major parts or components.
 
@@ -29,9 +31,9 @@ Creating desktop app using Angular 2 and Electron framework
      loaders – to transform the file. eg typescript loader; exclude the files in the node_modules directory etc.
      commonchunks plugin used here is simply to split the built file into chunks. (angular2.js and common.js).
  
- npm build
+    npm build
  
- npm start
+    npm start
    
  Note: making sure that the node version is >= 6.0 and npm >= 3
 

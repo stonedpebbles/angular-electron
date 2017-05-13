@@ -8,11 +8,11 @@ Creating desktop app using Angular 2 and Electron framework
 
 2. Steps:
 
-• npm init
-• npm install electron-prebuilt --save-dev
-• create index.js and app/index.html
-• modify package.json to add start scripts
-• add a webpack.congif.js file 
+a. npm init
+b. npm install electron-prebuilt --save-dev
+c. create index.js and app/index.html
+d. modify package.json to add start scripts
+e. add a webpack.congif.js file 
   Every webpack config file will have 4 major parts or components.
 
      entry – specifies the deps to be bundled.

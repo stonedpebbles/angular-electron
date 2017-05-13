@@ -1,4 +1,35 @@
-# Angulardesk
+Creating desktop app using Angular 2 and Electron framework
+
+ 1. A basic Electron application needs just these files:
+
+•package.json - Points to the app's main file and lists its details and dependencies.
+•main.js - Starts the app and creates a browser window to render HTML. This is the app's main process.
+•index.html - A web page to render. This is the app's renderer process.
+
+2. Steps:
+
+• npm init
+• npm install electron-prebuilt --save-dev
+• create index.js and app/index.html
+• modify package.json to add start scripts
+• add a webpack.congif.js file 
+  Every webpack config file will have 4 major parts or components.
+
+     entry – specifies the deps to be bundled.
+
+     output – to place build file or the output file .
+
+     resolve – specifies the files to be taken, shows that all files belonging to that specific extension are to be resolved.
+
+     loaders – to transform the file. eg typescript loader; exclude the files in the node_modules directory etc.
+     commonchunks plugin used here is simply to split the built file into chunks. (angular2.js and common.js).
+ • npm build
+ • npm start
+   
+ Note: making sure that the node version is >= 6.0 and npm >= 3
+
+
+
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
